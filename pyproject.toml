@@ -9,7 +9,7 @@ description = "Sub-threshold anomaly detection for the Exemplar stack"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-authors = [{ name = "Jeremy McEntire", email = "jandrewmcentire@gmail.com" }]
+authors = [{ name = "Wander" }]
 keywords = ["anomaly-detection", "observability", "exemplar-stack"]
 classifiers = [
   "Development Status :: 3 - Alpha",
