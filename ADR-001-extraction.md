@@ -1,7 +1,7 @@
 # ADR-001: vigil extraction architecture
 
 **Status:** Accepted (2026-05-06; Claude/Codex collaboration)
-**Source spec:** `~/Code/vigil/SPEC.md`
+**Source spec:** `~/WanderRepos/repos/vigil/SPEC.md`
 
 ## Context
 
@@ -45,7 +45,7 @@ runtime code beyond emitting trace samples (which already exists).**
 
 ### Input streams (V1)
 
-1. **Baton event channel** — published by `~/Code/baton/src/baton/`
+1. **Baton event channel** — published by `~/WanderRepos/repos/baton/src/baton/`
    on every adapter health-check, canary state change, and
    service-event. vigil subscribes.
 2. **Reeve trace_samples** — read via Reeve's
@@ -95,7 +95,7 @@ detection method that works.
 ### Repo layout
 
 ```
-~/Code/vigil/
+~/WanderRepos/repos/vigil/
 ├── SPEC.md
 ├── ADR-001-extraction.md  # this file
 ├── pyproject.toml
@@ -196,7 +196,7 @@ vigil never AUTO-rolls back. It surfaces; humans decide.
 
 vigil has no migration — it's net-new. First milestone:
 
-1. Init `~/Code/vigil/` per layout.
+1. Init `~/WanderRepos/repos/vigil/` per layout.
 2. Author the schema migration.
 3. Implement the rolling baseline + z-score detector.
 4. Wire the FastAPI for forensic queries.
